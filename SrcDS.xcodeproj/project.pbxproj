@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D209C048181C9A3300FFA4DB /* HSGameLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D209C046181C9A3300FFA4DB /* HSGameLib.cpp */; };
+		D209C049181C9A3300FFA4DB /* HSGameLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D209C047181C9A3300FFA4DB /* HSGameLib.h */; };
+		D215CFAF17D06DB3009B3DFD /* am-moveable.h in Headers */ = {isa = PBXBuildFile; fileRef = D215CFAD17D06DB3009B3DFD /* am-moveable.h */; };
+		D215CFB017D06DB3009B3DFD /* am-utility.h in Headers */ = {isa = PBXBuildFile; fileRef = D215CFAE17D06DB3009B3DFD /* am-utility.h */; };
+		D215CFB117D07E88009B3DFD /* am-string.h in Headers */ = {isa = PBXBuildFile; fileRef = D215CFAC17D04D60009B3DFD /* am-string.h */; };
+		D217D8F81852FBA9005B5062 /* gameapi.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D27879AA17AC52DB00761D35 /* gameapi.dylib */; };
+		D21D7CFC17FE5F0F00B39E2E /* ErrorReporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D21D7CFA17FE5F0F00B39E2E /* ErrorReporter.cpp */; };
+		D21D7CFD17FE5F0F00B39E2E /* ErrorReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = D21D7CFB17FE5F0F00B39E2E /* ErrorReporter.h */; };
+		D21D7D0017FED59900B39E2E /* ServerFix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D21D7CFE17FED59900B39E2E /* ServerFix.cpp */; };
+		D21D7D0117FED59900B39E2E /* ServerFix.h in Headers */ = {isa = PBXBuildFile; fileRef = D21D7CFF17FED59900B39E2E /* ServerFix.h */; };
+		D21D9A7917C1C42300B77C2E /* GameLibPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D21D9A7717C1C42300B77C2E /* GameLibPosix.cpp */; };
+		D21D9A7A17C1C42300B77C2E /* GameLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D21D9A7817C1C42300B77C2E /* GameLib.h */; };
+		D22DA73F17AD56DE001F1BF9 /* GameAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D22DA73D17AD56DE001F1BF9 /* GameAPI.cpp */; };
+		D2424C52184FBF8C00830945 /* SDGameAPIProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2424C4F184F8EC200830945 /* SDGameAPIProxy.mm */; };
+		D252624517FC9C0E0031AEC7 /* GameDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D252624317FC9C0E0031AEC7 /* GameDetector.cpp */; };
+		D252624617FC9C0E0031AEC7 /* GameDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = D252624417FC9C0E0031AEC7 /* GameDetector.h */; };
+		D2742358183B86D30012C833 /* ICommandLine.h in Headers */ = {isa = PBXBuildFile; fileRef = D2742357183B86D30012C833 /* ICommandLine.h */; };
+		D27879C617AC57BE00761D35 /* srcds_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = D27879C517AC57BE00761D35 /* srcds_osx.mm */; };
+		D27879CB17AC9CD600761D35 /* console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D27879C917AC9CD600761D35 /* console.cpp */; };
+		D2895CED1851A158009D7DB5 /* SDGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D2895CEC1851A158009D7DB5 /* SDGame.m */; };
+		D28BBBE6182E610500ACB226 /* asm.c in Sources */ = {isa = PBXBuildFile; fileRef = D28BBBD9182E610500ACB226 /* asm.c */; };
+		D28BBBE7182E610500ACB226 /* asm.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBDA182E610500ACB226 /* asm.h */; };
+		D28BBBE8182E610500ACB226 /* detourhelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBDC182E610500ACB226 /* detourhelpers.h */; };
+		D28BBBE9182E610500ACB226 /* detours.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D28BBBDD182E610500ACB226 /* detours.cpp */; };
+		D28BBBEA182E610500ACB226 /* detours.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBDE182E610500ACB226 /* detours.h */; };
+		D28BBBEB182E610500ACB226 /* sh_include.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBE0182E610500ACB226 /* sh_include.h */; };
+		D28BBBEC182E610500ACB226 /* sh_list.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBE1182E610500ACB226 /* sh_list.h */; };
+		D28BBBED182E610500ACB226 /* sh_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBE2182E610500ACB226 /* sh_memory.h */; };
+		D28BBBEE182E610500ACB226 /* sh_pagealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBE3182E610500ACB226 /* sh_pagealloc.h */; };
+		D28BBBEF182E610500ACB226 /* sourcehook_hookmangen.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBE4182E610500ACB226 /* sourcehook_hookmangen.h */; };
+		D28BBBF0182E610500ACB226 /* sourcehook_hookmangen_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = D28BBBE5182E610500ACB226 /* sourcehook_hookmangen_x86.h */; };
+		D28BBBF218308A3100ACB226 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28BBBF118308A3100ACB226 /* CoreFoundation.framework */; };
+		D2B35EA6183CA75300A1A75B /* IGameServerData.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B35EA5183CA75300A1A75B /* IGameServerData.h */; };
+		D2C3B59317AC37900055865F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C3B59217AC37900055865F /* Cocoa.framework */; };
+		D2C3B59D17AC37900055865F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2C3B59B17AC37900055865F /* InfoPlist.strings */; };
+		D2C3B5A317AC37900055865F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D2C3B5A117AC37900055865F /* Credits.rtf */; };
+		D2C3B5A617AC37900055865F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3B5A517AC37900055865F /* AppDelegate.m */; };
+		D2C3B5A917AC37910055865F /* StartWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C3B5A717AC37910055865F /* StartWindow.xib */; };
+		D2CB188E183DA0A20070F73B /* ByteBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2CB188C183DA0A20070F73B /* ByteBuffer.cpp */; };
+		D2CB188F183DA0A20070F73B /* ByteBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CB188D183DA0A20070F73B /* ByteBuffer.h */; };
+		D2E757461841B880004FAC87 /* SDPortNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E757451841B880004FAC87 /* SDPortNumberFormatter.m */; };
+		D2E757491841EE48004FAC87 /* am-allocator-policies.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E757471841EE48004FAC87 /* am-allocator-policies.h */; };
+		D2E7574A1841EE48004FAC87 /* am-linkedlist.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E757481841EE48004FAC87 /* am-linkedlist.h */; };
+		D2E7574D1841FAF0004FAC87 /* FileSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2E7574B1841FAF0004FAC87 /* FileSystem.cpp */; };
+		D2E7574E1841FAF0004FAC87 /* FileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E7574C1841FAF0004FAC87 /* FileSystem.h */; };
+		D2F7B9B717C6081600601841 /* stringutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2F7B9B517C6081600601841 /* stringutil.cpp */; };
+		D2F7B9B817C6081600601841 /* stringutil.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F7B9B617C6081600601841 /* stringutil.h */; };
+		D2FA20B117ED83F7000E2217 /* gameapi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D27879AA17AC52DB00761D35 /* gameapi.dylib */; };
+		D2FA20BB17EED146000E2217 /* sm_symtable.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B260C117C0A56D00A4A973 /* sm_symtable.h */; };
+		D2FA20C217EED191000E2217 /* IGameAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FA20C017EED191000E2217 /* IGameAPI.h */; };
+		D2FA20C317EED191000E2217 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FA20C117EED191000E2217 /* platform.h */; };
+		D2FD46D51839603F002200C0 /* StartWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD46D218395891002200C0 /* StartWindowController.m */; };
+		D2FD46DB18398007002200C0 /* ServerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD46D918398007002200C0 /* ServerWindowController.m */; };
+		D2FD46DD18398122002200C0 /* ServerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FD46DF18398122002200C0 /* ServerWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D21D9A7217C1A7EA00B77C2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2C3B58717AC37900055865F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27879A917AC52DB00761D35;
+			remoteInfo = gameapi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D21D9A6C17C19F1600B77C2E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Libraries;
+			dstSubfolderSpec = 1;
+			files = (
+				D217D8F81852FBA9005B5062 /* gameapi.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D209C046181C9A3300FFA4DB /* HSGameLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HSGameLib.cpp; path = gameapi/srvfixes/HSGameLib.cpp; sourceTree = "<group>"; };
+		D209C047181C9A3300FFA4DB /* HSGameLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSGameLib.h; path = gameapi/srvfixes/HSGameLib.h; sourceTree = "<group>"; };
+		D215CFAC17D04D60009B3DFD /* am-string.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; indentWidth = 2; name = "am-string.h"; path = "amtl/am-string.h"; sourceTree = "<group>"; tabWidth = 2; };
+		D215CFAD17D06DB3009B3DFD /* am-moveable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; indentWidth = 2; name = "am-moveable.h"; path = "amtl/am-moveable.h"; sourceTree = "<group>"; tabWidth = 2; };
+		D215CFAE17D06DB3009B3DFD /* am-utility.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; indentWidth = 2; name = "am-utility.h"; path = "amtl/am-utility.h"; sourceTree = "<group>"; tabWidth = 2; };
+		D21D7CFA17FE5F0F00B39E2E /* ErrorReporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ErrorReporter.cpp; path = gameapi/ErrorReporter.cpp; sourceTree = "<group>"; };
+		D21D7CFB17FE5F0F00B39E2E /* ErrorReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ErrorReporter.h; path = gameapi/ErrorReporter.h; sourceTree = "<group>"; };
+		D21D7CFE17FED59900B39E2E /* ServerFix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ServerFix.cpp; path = gameapi/srvfixes/ServerFix.cpp; sourceTree = "<group>"; };
+		D21D7CFF17FED59900B39E2E /* ServerFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerFix.h; path = gameapi/srvfixes/ServerFix.h; sourceTree = "<group>"; };
+		D21D9A7717C1C42300B77C2E /* GameLibPosix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLibPosix.cpp; path = gameapi/GameLibPosix.cpp; sourceTree = "<group>"; };
+		D21D9A7817C1C42300B77C2E /* GameLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLib.h; path = gameapi/GameLib.h; sourceTree = "<group>"; };
+		D22DA73D17AD56DE001F1BF9 /* GameAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameAPI.cpp; path = gameapi/GameAPI.cpp; sourceTree = "<group>"; };
+		D2424C4D184F7E6500830945 /* SDGameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDGameDelegate.h; path = gui/macosx/SDGameDelegate.h; sourceTree = "<group>"; };
+		D2424C4E184F8EC200830945 /* SDGameAPIProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDGameAPIProxy.h; path = gui/macosx/SDGameAPIProxy.h; sourceTree = "<group>"; };
+		D2424C4F184F8EC200830945 /* SDGameAPIProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SDGameAPIProxy.mm; path = gui/macosx/SDGameAPIProxy.mm; sourceTree = "<group>"; };
+		D252624317FC9C0E0031AEC7 /* GameDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameDetector.cpp; path = gameapi/GameDetector.cpp; sourceTree = "<group>"; };
+		D252624417FC9C0E0031AEC7 /* GameDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDetector.h; path = gameapi/GameDetector.h; sourceTree = "<group>"; };
+		D2742357183B86D30012C833 /* ICommandLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICommandLine.h; path = gameapi/ICommandLine.h; sourceTree = "<group>"; };
+		D27879A417AC524C00761D35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = gui/macosx/Resources/Info.plist; sourceTree = "<group>"; };
+		D27879AA17AC52DB00761D35 /* gameapi.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = gameapi.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27879C517AC57BE00761D35 /* srcds_osx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = srcds_osx.mm; sourceTree = "<group>"; wrapsLines = 1; };
+		D27879C917AC9CD600761D35 /* console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = console.cpp; path = console/console.cpp; sourceTree = "<group>"; };
+		D27879CA17AC9CD600761D35 /* console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = console.h; path = console/console.h; sourceTree = "<group>"; };
+		D2895CEB1851A158009D7DB5 /* SDGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDGame.h; path = gui/macosx/SDGame.h; sourceTree = "<group>"; };
+		D2895CEC1851A158009D7DB5 /* SDGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDGame.m; path = gui/macosx/SDGame.m; sourceTree = "<group>"; };
+		D28BBBD9182E610500ACB226 /* asm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asm.c; sourceTree = "<group>"; };
+		D28BBBDA182E610500ACB226 /* asm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm.h; sourceTree = "<group>"; };
+		D28BBBDC182E610500ACB226 /* detourhelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detourhelpers.h; sourceTree = "<group>"; };
+		D28BBBDD182E610500ACB226 /* detours.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detours.cpp; sourceTree = "<group>"; };
+		D28BBBDE182E610500ACB226 /* detours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detours.h; sourceTree = "<group>"; };
+		D28BBBE0182E610500ACB226 /* sh_include.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sh_include.h; sourceTree = "<group>"; };
+		D28BBBE1182E610500ACB226 /* sh_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sh_list.h; sourceTree = "<group>"; };
+		D28BBBE2182E610500ACB226 /* sh_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sh_memory.h; sourceTree = "<group>"; };
+		D28BBBE3182E610500ACB226 /* sh_pagealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sh_pagealloc.h; sourceTree = "<group>"; };
+		D28BBBE4182E610500ACB226 /* sourcehook_hookmangen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sourcehook_hookmangen.h; sourceTree = "<group>"; };
+		D28BBBE5182E610500ACB226 /* sourcehook_hookmangen_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sourcehook_hookmangen_x86.h; sourceTree = "<group>"; };
+		D28BBBF118308A3100ACB226 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D2B260C117C0A56D00A4A973 /* sm_symtable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sm_symtable.h; path = gameapi/srvfixes/sm_symtable.h; sourceTree = "<group>"; };
+		D2B260C417C0CBB800A4A973 /* GameAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameAPI.h; path = gameapi/GameAPI.h; sourceTree = "<group>"; };
+		D2B35EA5183CA75300A1A75B /* IGameServerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGameServerData.h; path = gameapi/IGameServerData.h; sourceTree = "<group>"; };
+		D2C3B58F17AC37900055865F /* SrcDS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SrcDS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C3B59217AC37900055865F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D2C3B59517AC37900055865F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D2C3B59617AC37900055865F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D2C3B59717AC37900055865F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2C3B59C17AC37900055865F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2C3B5A017AC37900055865F /* srcds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "srcds-Prefix.pch"; path = "gui/macosx/srcds-Prefix.pch"; sourceTree = "<group>"; };
+		D2C3B5A217AC37900055865F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D2C3B5A417AC37900055865F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = gui/macosx/AppDelegate.h; sourceTree = "<group>"; };
+		D2C3B5A517AC37900055865F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = gui/macosx/AppDelegate.m; sourceTree = "<group>"; };
+		D2C3B5A817AC37910055865F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StartWindow.xib; sourceTree = "<group>"; };
+		D2CB188C183DA0A20070F73B /* ByteBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ByteBuffer.cpp; path = gameapi/ByteBuffer.cpp; sourceTree = "<group>"; };
+		D2CB188D183DA0A20070F73B /* ByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ByteBuffer.h; path = gameapi/ByteBuffer.h; sourceTree = "<group>"; };
+		D2E757441841B880004FAC87 /* SDPortNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDPortNumberFormatter.h; path = gui/macosx/SDPortNumberFormatter.h; sourceTree = "<group>"; };
+		D2E757451841B880004FAC87 /* SDPortNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDPortNumberFormatter.m; path = gui/macosx/SDPortNumberFormatter.m; sourceTree = "<group>"; };
+		D2E757471841EE48004FAC87 /* am-allocator-policies.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; indentWidth = 2; name = "am-allocator-policies.h"; path = "amtl/am-allocator-policies.h"; sourceTree = "<group>"; tabWidth = 2; };
+		D2E757481841EE48004FAC87 /* am-linkedlist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; indentWidth = 2; name = "am-linkedlist.h"; path = "amtl/am-linkedlist.h"; sourceTree = "<group>"; tabWidth = 2; wrapsLines = 1; };
+		D2E7574B1841FAF0004FAC87 /* FileSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSystem.cpp; path = gameapi/srvfixes/FileSystem.cpp; sourceTree = "<group>"; };
+		D2E7574C1841FAF0004FAC87 /* FileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSystem.h; path = gameapi/srvfixes/FileSystem.h; sourceTree = "<group>"; };
+		D2F7B9B517C6081600601841 /* stringutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stringutil.cpp; path = gameapi/stringutil.cpp; sourceTree = "<group>"; };
+		D2F7B9B617C6081600601841 /* stringutil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = stringutil.h; path = gameapi/stringutil.h; sourceTree = "<group>"; };
+		D2FA20C017EED191000E2217 /* IGameAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGameAPI.h; path = public/IGameAPI.h; sourceTree = "<group>"; };
+		D2FA20C117EED191000E2217 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = public/platform.h; sourceTree = "<group>"; };
+		D2FD46D118395891002200C0 /* StartWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartWindowController.h; path = gui/macosx/StartWindowController.h; sourceTree = "<group>"; };
+		D2FD46D218395891002200C0 /* StartWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartWindowController.m; path = gui/macosx/StartWindowController.m; sourceTree = "<group>"; };
+		D2FD46D818398007002200C0 /* ServerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerWindowController.h; path = gui/macosx/ServerWindowController.h; sourceTree = "<group>"; };
+		D2FD46D918398007002200C0 /* ServerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerWindowController.m; path = gui/macosx/ServerWindowController.m; sourceTree = "<group>"; };
+		D2FD46DE18398122002200C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ServerWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D27879A717AC52DB00761D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D28BBBF218308A3100ACB226 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C3B58C17AC37900055865F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FA20B117ED83F7000E2217 /* gameapi.dylib in Frameworks */,
+				D2C3B59317AC37900055865F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D215CFAB17D04D38009B3DFD /* amtl */ = {
+			isa = PBXGroup;
+			children = (
+				D2E757471841EE48004FAC87 /* am-allocator-policies.h */,
+				D2E757481841EE48004FAC87 /* am-linkedlist.h */,
+				D215CFAD17D06DB3009B3DFD /* am-moveable.h */,
+				D215CFAC17D04D60009B3DFD /* am-string.h */,
+				D215CFAE17D06DB3009B3DFD /* am-utility.h */,
+			);
+			name = amtl;
+			sourceTree = "<group>";
+		};
+		D27879C717AC9B3400761D35 /* console */ = {
+			isa = PBXGroup;
+			children = (
+				D27879C917AC9CD600761D35 /* console.cpp */,
+				D27879CA17AC9CD600761D35 /* console.h */,
+			);
+			name = console;
+			sourceTree = "<group>";
+		};
+		D27879C817AC9B4600761D35 /* gameapi */ = {
+			isa = PBXGroup;
+			children = (
+				D2B260C017C0A01B00A4A973 /* srvfixes */,
+				D2CB188C183DA0A20070F73B /* ByteBuffer.cpp */,
+				D2CB188D183DA0A20070F73B /* ByteBuffer.h */,
+				D21D7CFA17FE5F0F00B39E2E /* ErrorReporter.cpp */,
+				D21D7CFB17FE5F0F00B39E2E /* ErrorReporter.h */,
+				D22DA73D17AD56DE001F1BF9 /* GameAPI.cpp */,
+				D2B260C417C0CBB800A4A973 /* GameAPI.h */,
+				D252624317FC9C0E0031AEC7 /* GameDetector.cpp */,
+				D252624417FC9C0E0031AEC7 /* GameDetector.h */,
+				D21D9A7817C1C42300B77C2E /* GameLib.h */,
+				D21D9A7717C1C42300B77C2E /* GameLibPosix.cpp */,
+				D2742357183B86D30012C833 /* ICommandLine.h */,
+				D2B35EA5183CA75300A1A75B /* IGameServerData.h */,
+				D2F7B9B517C6081600601841 /* stringutil.cpp */,
+				D2F7B9B617C6081600601841 /* stringutil.h */,
+			);
+			name = gameapi;
+			sourceTree = "<group>";
+		};
+		D28BBBD8182E610500ACB226 /* asm */ = {
+			isa = PBXGroup;
+			children = (
+				D28BBBD9182E610500ACB226 /* asm.c */,
+				D28BBBDA182E610500ACB226 /* asm.h */,
+			);
+			name = asm;
+			path = gameapi/srvfixes/asm;
+			sourceTree = "<group>";
+		};
+		D28BBBDB182E610500ACB226 /* CDetour */ = {
+			isa = PBXGroup;
+			children = (
+				D28BBBDC182E610500ACB226 /* detourhelpers.h */,
+				D28BBBDD182E610500ACB226 /* detours.cpp */,
+				D28BBBDE182E610500ACB226 /* detours.h */,
+			);
+			name = CDetour;
+			path = gameapi/srvfixes/CDetour;
+			sourceTree = "<group>";
+		};
+		D28BBBDF182E610500ACB226 /* sourcehook */ = {
+			isa = PBXGroup;
+			children = (
+				D28BBBE0182E610500ACB226 /* sh_include.h */,
+				D28BBBE1182E610500ACB226 /* sh_list.h */,
+				D28BBBE2182E610500ACB226 /* sh_memory.h */,
+				D28BBBE3182E610500ACB226 /* sh_pagealloc.h */,
+				D28BBBE4182E610500ACB226 /* sourcehook_hookmangen.h */,
+				D28BBBE5182E610500ACB226 /* sourcehook_hookmangen_x86.h */,
+			);
+			name = sourcehook;
+			path = gameapi/srvfixes/sourcehook;
+			sourceTree = "<group>";
+		};
+		D2B260C017C0A01B00A4A973 /* srvfixes */ = {
+			isa = PBXGroup;
+			children = (
+				D28BBBD8182E610500ACB226 /* asm */,
+				D28BBBDB182E610500ACB226 /* CDetour */,
+				D28BBBDF182E610500ACB226 /* sourcehook */,
+				D2E7574B1841FAF0004FAC87 /* FileSystem.cpp */,
+				D2E7574C1841FAF0004FAC87 /* FileSystem.h */,
+				D209C046181C9A3300FFA4DB /* HSGameLib.cpp */,
+				D209C047181C9A3300FFA4DB /* HSGameLib.h */,
+				D21D7CFE17FED59900B39E2E /* ServerFix.cpp */,
+				D21D7CFF17FED59900B39E2E /* ServerFix.h */,
+				D2B260C117C0A56D00A4A973 /* sm_symtable.h */,
+			);
+			name = srvfixes;
+			sourceTree = "<group>";
+		};
+		D2B260C317C0CB8300A4A973 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				D2FA20C017EED191000E2217 /* IGameAPI.h */,
+				D2FA20C117EED191000E2217 /* platform.h */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		D2C3B58617AC37900055865F = {
+			isa = PBXGroup;
+			children = (
+				D215CFAB17D04D38009B3DFD /* amtl */,
+				D27879C817AC9B4600761D35 /* gameapi */,
+				D2B260C317C0CB8300A4A973 /* public */,
+				D2C3B59817AC37900055865F /* srcds */,
+				D2C3B59117AC37900055865F /* Frameworks */,
+				D2C3B59017AC37900055865F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2C3B59017AC37900055865F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3B58F17AC37900055865F /* SrcDS.app */,
+				D27879AA17AC52DB00761D35 /* gameapi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2C3B59117AC37900055865F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3B59217AC37900055865F /* Cocoa.framework */,
+				D28BBBF118308A3100ACB226 /* CoreFoundation.framework */,
+				D2C3B59417AC37900055865F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2C3B59417AC37900055865F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3B59517AC37900055865F /* AppKit.framework */,
+				D2C3B59617AC37900055865F /* CoreData.framework */,
+				D2C3B59717AC37900055865F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D2C3B59817AC37900055865F /* srcds */ = {
+			isa = PBXGroup;
+			children = (
+				D27879C717AC9B3400761D35 /* console */,
+				D2C3B59917AC37900055865F /* Supporting Files */,
+				D2C3B5A417AC37900055865F /* AppDelegate.h */,
+				D2C3B5A517AC37900055865F /* AppDelegate.m */,
+				D2895CEB1851A158009D7DB5 /* SDGame.h */,
+				D2895CEC1851A158009D7DB5 /* SDGame.m */,
+				D2424C4E184F8EC200830945 /* SDGameAPIProxy.h */,
+				D2424C4F184F8EC200830945 /* SDGameAPIProxy.mm */,
+				D2424C4D184F7E6500830945 /* SDGameDelegate.h */,
+				D2E757441841B880004FAC87 /* SDPortNumberFormatter.h */,
+				D2E757451841B880004FAC87 /* SDPortNumberFormatter.m */,
+				D2FD46DF18398122002200C0 /* ServerWindow.xib */,
+				D2FD46D818398007002200C0 /* ServerWindowController.h */,
+				D2FD46D918398007002200C0 /* ServerWindowController.m */,
+				D27879C517AC57BE00761D35 /* srcds_osx.mm */,
+				D2C3B5A717AC37910055865F /* StartWindow.xib */,
+				D2FD46D118395891002200C0 /* StartWindowController.h */,
+				D2FD46D218395891002200C0 /* StartWindowController.m */,
+			);
+			path = srcds;
+			sourceTree = "<group>";
+		};
+		D2C3B59917AC37900055865F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D27879A417AC524C00761D35 /* Info.plist */,
+				D2C3B59B17AC37900055865F /* InfoPlist.strings */,
+				D2C3B5A017AC37900055865F /* srcds-Prefix.pch */,
+				D2C3B5A117AC37900055865F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D27879A817AC52DB00761D35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D28BBBEB182E610500ACB226 /* sh_include.h in Headers */,
+				D252624617FC9C0E0031AEC7 /* GameDetector.h in Headers */,
+				D21D9A7A17C1C42300B77C2E /* GameLib.h in Headers */,
+				D2742358183B86D30012C833 /* ICommandLine.h in Headers */,
+				D28BBBE7182E610500ACB226 /* asm.h in Headers */,
+				D28BBBED182E610500ACB226 /* sh_memory.h in Headers */,
+				D2FA20BB17EED146000E2217 /* sm_symtable.h in Headers */,
+				D2F7B9B817C6081600601841 /* stringutil.h in Headers */,
+				D2CB188F183DA0A20070F73B /* ByteBuffer.h in Headers */,
+				D28BBBE8182E610500ACB226 /* detourhelpers.h in Headers */,
+				D215CFAF17D06DB3009B3DFD /* am-moveable.h in Headers */,
+				D209C049181C9A3300FFA4DB /* HSGameLib.h in Headers */,
+				D2FA20C217EED191000E2217 /* IGameAPI.h in Headers */,
+				D21D7CFD17FE5F0F00B39E2E /* ErrorReporter.h in Headers */,
+				D28BBBEA182E610500ACB226 /* detours.h in Headers */,
+				D28BBBF0182E610500ACB226 /* sourcehook_hookmangen_x86.h in Headers */,
+				D21D7D0117FED59900B39E2E /* ServerFix.h in Headers */,
+				D2B35EA6183CA75300A1A75B /* IGameServerData.h in Headers */,
+				D2E757491841EE48004FAC87 /* am-allocator-policies.h in Headers */,
+				D28BBBEE182E610500ACB226 /* sh_pagealloc.h in Headers */,
+				D28BBBEC182E610500ACB226 /* sh_list.h in Headers */,
+				D2E7574A1841EE48004FAC87 /* am-linkedlist.h in Headers */,
+				D2FA20C317EED191000E2217 /* platform.h in Headers */,
+				D28BBBEF182E610500ACB226 /* sourcehook_hookmangen.h in Headers */,
+				D2E7574E1841FAF0004FAC87 /* FileSystem.h in Headers */,
+				D215CFB017D06DB3009B3DFD /* am-utility.h in Headers */,
+				D215CFB117D07E88009B3DFD /* am-string.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D27879A917AC52DB00761D35 /* gameapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27879AB17AC52DB00761D35 /* Build configuration list for PBXNativeTarget "gameapi" */;
+			buildPhases = (
+				D27879A617AC52DB00761D35 /* Sources */,
+				D27879A717AC52DB00761D35 /* Frameworks */,
+				D27879A817AC52DB00761D35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gameapi;
+			productName = gameapi;
+			productReference = D27879AA17AC52DB00761D35 /* gameapi.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D2C3B58E17AC37900055865F /* SrcDS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C3B5AC17AC37910055865F /* Build configuration list for PBXNativeTarget "SrcDS" */;
+			buildPhases = (
+				D21D9A6C17C19F1600B77C2E /* CopyFiles */,
+				D2C3B58B17AC37900055865F /* Sources */,
+				D2C3B58C17AC37900055865F /* Frameworks */,
+				D2C3B58D17AC37900055865F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D21D9A7317C1A7EA00B77C2E /* PBXTargetDependency */,
+			);
+			name = SrcDS;
+			productName = srcds;
+			productReference = D2C3B58F17AC37900055865F /* SrcDS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2C3B58717AC37900055865F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = AlliedModders;
+			};
+			buildConfigurationList = D2C3B58A17AC37900055865F /* Build configuration list for PBXProject "SrcDS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2C3B58617AC37900055865F;
+			productRefGroup = D2C3B59017AC37900055865F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D27879A917AC52DB00761D35 /* gameapi */,
+				D2C3B58E17AC37900055865F /* SrcDS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2C3B58D17AC37900055865F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C3B59D17AC37900055865F /* InfoPlist.strings in Resources */,
+				D2C3B5A317AC37900055865F /* Credits.rtf in Resources */,
+				D2FD46DD18398122002200C0 /* ServerWindow.xib in Resources */,
+				D2C3B5A917AC37910055865F /* StartWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D27879A617AC52DB00761D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21D7CFC17FE5F0F00B39E2E /* ErrorReporter.cpp in Sources */,
+				D209C048181C9A3300FFA4DB /* HSGameLib.cpp in Sources */,
+				D22DA73F17AD56DE001F1BF9 /* GameAPI.cpp in Sources */,
+				D21D7D0017FED59900B39E2E /* ServerFix.cpp in Sources */,
+				D28BBBE9182E610500ACB226 /* detours.cpp in Sources */,
+				D2CB188E183DA0A20070F73B /* ByteBuffer.cpp in Sources */,
+				D21D9A7917C1C42300B77C2E /* GameLibPosix.cpp in Sources */,
+				D2E7574D1841FAF0004FAC87 /* FileSystem.cpp in Sources */,
+				D2F7B9B717C6081600601841 /* stringutil.cpp in Sources */,
+				D252624517FC9C0E0031AEC7 /* GameDetector.cpp in Sources */,
+				D28BBBE6182E610500ACB226 /* asm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C3B58B17AC37900055865F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FD46D51839603F002200C0 /* StartWindowController.m in Sources */,
+				D2C3B5A617AC37900055865F /* AppDelegate.m in Sources */,
+				D2FD46DB18398007002200C0 /* ServerWindowController.m in Sources */,
+				D2E757461841B880004FAC87 /* SDPortNumberFormatter.m in Sources */,
+				D2895CED1851A158009D7DB5 /* SDGame.m in Sources */,
+				D27879C617AC57BE00761D35 /* srcds_osx.mm in Sources */,
+				D2424C52184FBF8C00830945 /* SDGameAPIProxy.mm in Sources */,
+				D27879CB17AC9CD600761D35 /* console.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D21D9A7317C1A7EA00B77C2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27879A917AC52DB00761D35 /* gameapi */;
+			targetProxy = D21D9A7217C1A7EA00B77C2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2C3B59B17AC37900055865F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C3B59C17AC37900055865F /* en */,
+			);
+			name = InfoPlist.strings;
+			path = gui/macosx/Resources;
+			sourceTree = "<group>";
+		};
+		D2C3B5A117AC37900055865F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C3B5A217AC37900055865F /* en */,
+			);
+			name = Credits.rtf;
+			path = gui/macosx/Resources;
+			sourceTree = "<group>";
+		};
+		D2C3B5A717AC37910055865F /* StartWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C3B5A817AC37910055865F /* en */,
+			);
+			name = StartWindow.xib;
+			path = gui/macosx/Resources;
+			sourceTree = "<group>";
+		};
+		D2FD46DF18398122002200C0 /* ServerWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2FD46DE18398122002200C0 /* en */,
+			);
+			name = ServerWindow.xib;
+			path = gui/macosx/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D27879AC17AC52DB00761D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				EXECUTABLE_PREFIX = "";
+				INSTALL_PATH = /SrcDS.app/Contents/Libraries/;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Libraries @loader_path/../../../bin @loader_path/../../.. @loader_path/../Libraries/Steam";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D27879AD17AC52DB00761D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				EXECUTABLE_PREFIX = "";
+				INSTALL_PATH = /SrcDS.app/Contents/Libraries/;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Libraries @loader_path/../../../bin @loader_path/../../.. @loader_path/../Libraries/Steam";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D2C3B5AA17AC37910055865F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		D2C3B5AB17AC37910055865F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		D2C3B5AD17AC37910055865F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "srcds/gui/macosx/srcds-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/srcds/gui/macosx/Resources/Info.plist";
+				INSTALL_PATH = /;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Libraries @loader_path/../../../bin @loader_path/../../.. @loader_path/../Steam";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/SrcDS-hejgkspimckolibmrcinbzojjmja/Build/Products/Debug/SrcDS.app/Contents/Libraries\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-dyld_env",
+					"-Xlinker",
+					"DYLD_LIBRARY_PATH=@loader_path/../Libraries:@loader_path/../../../bin:@loader_path/../../..:@loader_path/../Steam",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2C3B5AE17AC37910055865F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "srcds/gui/macosx/srcds-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/srcds/gui/macosx/Resources/Info.plist";
+				INSTALL_PATH = /;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Libraries @loader_path/../../../bin @loader_path/../../.. @loader_path/../Steam";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/SrcDS-hejgkspimckolibmrcinbzojjmja/Build/Products/Debug/SrcDS.app/Contents/Libraries\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-dyld_env",
+					"-Xlinker",
+					"DYLD_LIBRARY_PATH=@loader_path/../Libraries:@loader_path/../../../bin:@loader_path/../../..:@loader_path/../Steam",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D27879AB17AC52DB00761D35 /* Build configuration list for PBXNativeTarget "gameapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27879AC17AC52DB00761D35 /* Debug */,
+				D27879AD17AC52DB00761D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C3B58A17AC37900055865F /* Build configuration list for PBXProject "SrcDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C3B5AA17AC37910055865F /* Debug */,
+				D2C3B5AB17AC37910055865F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C3B5AC17AC37910055865F /* Build configuration list for PBXNativeTarget "SrcDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C3B5AD17AC37910055865F /* Debug */,
+				D2C3B5AE17AC37910055865F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2C3B58717AC37900055865F /* Project object */;
+}
